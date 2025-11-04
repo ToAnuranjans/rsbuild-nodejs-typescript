@@ -1,0 +1,36 @@
+{
+  "name": "rsbuild-nodejs-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:server": "tsc --project ./server/tsconfig.json",
+    "dev:server": "ts-node ./server/server.ts",
+    "clean": "rm -rf dist",
+    "dev:client": "rsbuild dev",
+    "build:client": "rsbuild build",
+    "build": "npm run clean && npm run build:server && npm run build:client",
+    "dev": "npm run clean && npm run dev:server && npm run dev:client",
+    "start": "npm run build && node ./dist/server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@rsbuild/core": "^1.6.1",
+    "@rsbuild/plugin-react": "^1.4.1",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}
