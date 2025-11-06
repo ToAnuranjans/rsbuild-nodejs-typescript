@@ -1,6 +1,6 @@
 declare global {
     interface Window {
-        __FPNAP_RESOURCE__?: unknown;
+        __APP_RESOURCE__?: unknown;
     }
 }
 

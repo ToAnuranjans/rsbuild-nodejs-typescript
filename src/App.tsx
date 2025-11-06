@@ -7,7 +7,7 @@ const App = () => {
             return null;
         }
 
-        return window.__FPNAP_RESOURCE__ ?? null;
+        return window.__APP_RESOURCE__ ?? null;
     }, []);
 
     return (
