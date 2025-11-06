@@ -11,7 +11,7 @@
     "dev:client": "rsbuild dev",
     "build:client": "rsbuild build",
     "build": "npm run clean && npm run build:server && npm run build:client",
-    "dev": "npm run clean && npm run dev:server && npm run dev:client",
+    "dev": "npm run dev:server",
     "start": "npm run build && node ./dist/server/server.js"
   },
   "keywords": [],
@@ -25,6 +25,7 @@
     "@types/node": "^24.10.0",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
+    "dotenv": "^17.2.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
