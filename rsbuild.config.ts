@@ -14,7 +14,10 @@ export default defineConfig(({ envMode, command, meta, env }) => {
         },
         source: {
             tsconfigPath: path.join(__dirname, './src/tsconfig.json'),
-            define: publicVars,
+            define: {
+                ...publicVars,
+                'process.env': JSON.stringify(rawPublicVars),
+            },
             include: ['src/**/*'],
             exclude: ['node_modules/**/*']
         },
@@ -24,6 +27,15 @@ export default defineConfig(({ envMode, command, meta, env }) => {
                 root: `dist/${prefix}/`,
             },
             assetPrefix: `/${prefix}/`,
+        },
+        module: {
+            rules: [
+                {
+                    test: /\.css$/,
+                    use: ["postcss-loader"],
+                    type: "css",
+                },
+            ],
         },
     }
 });

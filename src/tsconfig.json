@@ -3,5 +3,7 @@
 	"compilerOptions": {
 		"outDir": "./dist/trip",
 		"jsx": "react"
-	}
+	},
+	"include": ["./**/*"],
+	"exclude": ["node_modules"]
 }

@@ -1,4 +1,5 @@
 import React, { useMemo } from "react";
+import "./app.css";
 
 const App = () => {
     const [counter, setCounter] = React.useState(0);
@@ -12,6 +13,9 @@ const App = () => {
 
     return (
         <div>
+            <h1 className="text-3xl font-bold underline">
+                Hello world!
+            </h1>
             <h1>App 10 {counter}</h1>
             <button onClick={() => setCounter(counter + 1)}>Count: {counter}</button>
             <pre>{JSON.stringify(resource, null, 2)}</pre>
