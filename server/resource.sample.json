@@ -1,0 +1,55 @@
+{
+    "fleetName": "Sample Garage 1111",
+    "generatedAt": "2025-01-01T00:00:00.000Z",
+    "cars": [
+        {
+            "id": "model-s-long-range",
+            "make": "Tesla",
+            "model": "Model S",
+            "year": 2024,
+            "trim": "Long Range",
+            "msrpUsd": 84990,
+            "batteryKwh": 100,
+            "rangeMiles": 405,
+            "tags": [
+                "ev",
+                "sedan",
+                "luxury"
+            ]
+        },
+        {
+            "id": "i4-m50",
+            "make": "BMW",
+            "model": "i4",
+            "year": 2024,
+            "trim": "M50",
+            "msrpUsd": 69400,
+            "batteryKwh": 83.9,
+            "rangeMiles": 271,
+            "tags": [
+                "ev",
+                "sedan",
+                "performance"
+            ]
+        },
+        {
+            "id": "mustang-mach-e-premium",
+            "make": "Ford",
+            "model": "Mustang Mach-E",
+            "year": 2024,
+            "trim": "Premium AWD Extended",
+            "msrpUsd": 64395,
+            "batteryKwh": 91,
+            "rangeMiles": 310,
+            "tags": [
+                "ev",
+                "suv",
+                "awd"
+            ]
+        }
+    ],
+    "meta": {
+        "version": 1,
+        "source": "local-sample"
+    }
+}
