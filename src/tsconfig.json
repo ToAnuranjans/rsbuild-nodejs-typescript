@@ -1,9 +1,7 @@
 {
-	"extends": "../tsconfig.base.json",
-	"compilerOptions": {
-		"outDir": "./dist/trip",
-		"jsx": "react"
-	},
-	"include": ["./**/*"],
-	"exclude": ["node_modules"]
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist/trip",
+    "jsx": "react"
+  }
 }
