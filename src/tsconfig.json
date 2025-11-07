@@ -1,7 +1,7 @@
 {
-	"extends": "../tsconfig.base.json",
-	"compilerOptions": {
-		"outDir": "./dist/trip",
-		"jsx": "react"
-	}
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist/trip",
+    "jsx": "react"
+  }
 }

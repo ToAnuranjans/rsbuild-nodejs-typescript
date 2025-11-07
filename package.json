@@ -13,13 +13,17 @@
     "build": "npm run clean && npm run build:server && npm run build:client",
     "dev": "npm run dev:server",
     "start": "npm run build && node ./dist/server/server.js",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "format:check": "prettier . --check",
+    "format": "prettier --write 'src/**/*.{js,ts,jsx,tsx,css}' 'server/**/*.{js,ts}'",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@eslint/js": "^9.39.1",
     "@rsbuild/core": "^1.6.1",
     "@rsbuild/plugin-react": "^1.4.1",
     "@types/express": "^5.0.5",
@@ -27,8 +31,18 @@
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "dotenv": "^17.2.3",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.5.0",
+    "husky": "^9.1.7",
+    "jiti": "^2.6.1",
+    "lint-staged": "^16.2.6",
+    "prettier": "3.6.2",
+    "prettier-plugin-tailwindcss": "^0.7.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.3"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.16",
@@ -38,5 +52,8 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "tailwindcss": "^4.1.16"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
