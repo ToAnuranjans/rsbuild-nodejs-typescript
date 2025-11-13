@@ -57,11 +57,7 @@ const createDevHtmlProvider = async (): Promise<HtmlProvider> => {
 };
 
 const createProdHtmlProvider = async (): Promise<HtmlProvider> => {
-  const distDir = path.join(
-    PROJECT_ROOT,
-    'dist',
-    process.env.PUBLIC_PREFIX ?? 'trip',
-  );
+  const distDir = path.join(PROJECT_ROOT, 'dist', 'xyz');
   const indexHtmlPath = path.join(distDir, 'index.html');
 
   if (!existsSync(indexHtmlPath)) {

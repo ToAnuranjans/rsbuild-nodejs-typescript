@@ -21,7 +21,7 @@ const resolveProjectRoot = (): string => {
 };
 
 export const PROJECT_ROOT = resolveProjectRoot();
-export const APP_BASE_PATH = `/${process.env.PUBLIC_PREFIX}`;
+export const APP_BASE_PATH = `/xyz`;
 export const HTML_ENTRY = 'index';
 export const DATA_PLACEHOLDER = '<!--__APP_DATA__-->';
 export const DATA_GLOBAL_NAME = '__APP_RESOURCE__';
